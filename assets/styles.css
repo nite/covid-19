@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Rajdhani&display=swap");
+html, body, #react-entry-point, #_dash-global-error-container, .viz-container {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #000922;
+  color: #6195d2;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.modal-content {
+  padding: 20px;
+  width: 80%;
+}
+
+.radio-group label {
+  margin-right: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.plotz-container {
+  border: 1px solid darkslategray;
+}
+
+h4 {
+  margin: 0 10px;
+}
+
+.tab-container {
+  height: 15px;
+}
+.tab-container > div {
+  padding: 0;
+}
+
+.main-tab-family > .tab--selected.jsx-2137964197 {
+  background-color: #119DFF;
+  color: white;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header, .control-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header *, .control-panel * {
+  white-space: nowrap;
+}
+.header > :not(:first-child), .control-panel > :not(:first-child) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+h3 {
+  padding: 10px 0 0 10px;
+  margin: 0;
+}
+
+#_dash-app-content {
+  height: 100vh;
+  width: 100%;
+}
+
+#country_input {
+  width: 150px;
+}
+
+.covid-container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: auto 1fr;
+}
+
+.parent {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 15px;
+}
+.parent .div1 {
+  grid-area: 1/1/4/5;
+}
+.parent .div2 {
+  grid-area: 1/5/6/7;
+}
+.parent .div3 {
+  grid-area: 4/1/6/3;
+}
+.parent .div4 {
+  grid-area: 4/3/6/5;
+}
+.parent .dash-graph {
+  height: 100%;
+  width: 100%;
+}
+.parent > div {
+  margin: 0;
+  position: relative;
+}
+.parent > div.maximised {
+  position: fixed;
+  height: calc(100vh - 10px);
+  width: calc(100vw - 10px);
+  margin: 0;
+  padding: 5px;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: #000922;
+}
+.parent > div.maximised .fa {
+  z-index: 100;
+  top: 10px;
+  left: 10px;
+  font-size: x-large;
+  cursor: zoom-out;
+}
+.parent > div .fa {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  cursor: zoom-in;
+}
+
+.ts-row {
+  height: 20%;
+}
+
+.main-plot {
+  height: 66%;
+  width: 100%;
+}
+
+.m10 {
+  margin: 10px;
+}
+
+h3 {
+  margin: 0.5em 0;
+}
+
+.slider {
+  width: 250px;
+  margin-right: 30px;
+}
+
+tbody > tr:first-child {
+  display: none;
+}
+
+.dash-fixed-content {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+tr, td, td > div, .dash-spreadsheet-container .dash-spreadsheet-inner:not(.dash-list-view) td {
+  font-size: x-small;
+  height: 12px;
+  margin: 0;
+  padding: 0 2px;
+}
+
+.flex-row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-0 {
+  flex: 0;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-row > *:not(:first-child) {
+  margin-left: 10px;
+}
+
+input[type=radio] {
+  margin-right: 5px;
+}
+
+.scrollxy {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.col1 {
+  grid-column: 1;
+}
+
+.col2 {
+  grid-column: 2;
+}
+
+.row1 {
+  grid-row: 1;
+}
+
+.row2 {
+  grid-row: 2;
+}
+
+.row3 {
+  grid-row: 3;
+}
+
+div.snapshot-grid {
+  max-width: 50vw;
+  max-height: calc((100% - 117px) / 2);
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {%metas%}
+    <title>{%title%}</title>
+    {%favicon%}
+    {%css%}
+</head>
+<body>
+{%app_entry%}
+<footer>
+    {%config%}
+    {%scripts%}
+    {%renderer%}
+</footer>
+</body>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160301310-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-160301310-1');
+
+    window.onload = () => {
+        wireupMaximisers();
+    };
+
+</script>
+
+</html>
