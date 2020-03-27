@@ -156,8 +156,9 @@ def get_total_timeseries(covid_df, country=None, per_capita=False):
 
 
 def get_country_timeseries(covid_df, count_col='Confirmed'):
-    top_countries = covid_df.groupby(['Country']) \
-        .max() \
+    last_df = covid_df[covid_df['Date'] == covid_df['Date'].max()]
+
+    top_countries = last_df \
         .nlargest(plot_threshold, count_col) \
         .reset_index()['Country'].unique()
 

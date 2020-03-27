@@ -111,7 +111,7 @@ control_panel = html.Div(
         dcc.RadioItems(
             id='count_category',
             className='radio-group',
-            options=dropdown_options(['Confirmed', 'Active', 'Recovered']),
+            options=dropdown_options(['Confirmed', 'Active', 'Recovered', 'Deaths']),
             value='Confirmed',
             labelStyle={'display': 'inline-block'}
         ),
